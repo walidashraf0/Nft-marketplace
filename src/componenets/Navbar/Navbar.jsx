@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import MainButton from "../MainButton/MAinButton";
 
 const Navbar = () => {
   return (
@@ -35,9 +36,7 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center justify-between gap-4">
-          <button className="text-center bg-[#3D00B7] py-2 px-6 text-white rounded-4xl">
-            Upload
-          </button>
+          <MainButton text="Upload" />
           <button className="text-center py-2 px-4 text-[#3D00B7] font-semibold border border-[#3D00B7] rounded-4xl">
             Connect Wallet
           </button>

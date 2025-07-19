@@ -5,11 +5,13 @@ import MainImage from "../../assets/mainunsplash.png";
 import SecondImage from "../../assets/secondunsplash.png";
 import ThirdImage from "../../assets/thirdunsplash.png";
 import Avatar from "../../assets/avatar.png";
+import Circle from "../../assets/circle.png";
+import Dot from "../../assets/Dot.png";
 
 const Hero = () => {
   return (
     <section className="container m-auto px-4 py-2">
-      <div className="flex items-center justify-between p-10">
+      <div className="relative flex items-center justify-between p-10">
         <div className="flex flex-col justify-between gap-8">
           <h1 className="uppercase font-extrabold text-6xl w-[850px]">
             Discover, and collect Digital Art NFTs
@@ -44,25 +46,29 @@ const Hero = () => {
               />
               <div className="absolute top-6">
                 <div className="p-2 ml-4">
-                    <h3 className="text-xl text-white font-bold">Abstr Gradient NFT</h3>
-                    <article className="flex items-center gap-2 mt-2">
-                        <img src={Avatar} alt="Avatar" />
-                        <span className="text-white text-lg font-bold">Arkhan17</span>
-                    </article>
+                  <h3 className="text-xl text-white font-bold">
+                    Abstr Gradient NFT
+                  </h3>
+                  <article className="flex items-center gap-2 mt-2">
+                    <img src={Avatar} alt="Avatar" />
+                    <span className="text-white text-lg font-bold">
+                      Arkhan17
+                    </span>
+                  </article>
                 </div>
               </div>
               <div className="absolute bottom-4 left-5 w-[320px] text-white">
                 <div className="p-4 rounded-lg mx-auto backdrop-blur-lg bg-white/30">
-                    <div className="flex items-center justify-between">
-                        <article>
-                            <span className="text-md">Current Bid</span>
-                            <h4 className="text-xl font-bold">$ 0.25 ETH</h4>
-                        </article>
-                        <article>
-                            <span className="text-md">Ends in</span>
-                            <h4 className="text-xl font-bold">12h 43m 42s</h4>
-                        </article>
-                    </div>
+                  <div className="flex items-center justify-between">
+                    <article>
+                      <span className="text-md">Current Bid</span>
+                      <h4 className="text-xl font-bold">$ 0.25 ETH</h4>
+                    </article>
+                    <article>
+                      <span className="text-md">Ends in</span>
+                      <h4 className="text-xl font-bold">12h 43m 42s</h4>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
@@ -77,6 +83,12 @@ const Hero = () => {
           <div className="absolute top-10 right-16 z-10">
             <img src={ThirdImage} className="h-[320px]" alt="ThirdImage" />
           </div>
+          <div className="absolute bottom-50 -left-12 z-40">
+            <img src={Circle} alt="Circle" />
+          </div>
+        </div>
+        <div className="absolute bottom-14 left-0 -z-10">
+          <img src={Dot} alt="Dot" />
         </div>
       </div>
     </section>

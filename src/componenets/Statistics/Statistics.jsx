@@ -1,13 +1,16 @@
 import React from "react";
+import MainImage from "../../assets/mainunsplash.png";
+import SecondImage from "../../assets/secondunsplash.png";
 import ThirdImage from "../../assets/thirdunsplash.png";
 import Avatar from "../../assets/avatar.png";
 import MainButton from "../MainButton/MAinButton";
+import SecondaryButton from "../SecondaryButton/SecondaryButton";
 
 const Statistics = () => {
   return (
     <>
       <section className="container m-auto px-4 py-2 my-8">
-        <div className="grid grid-cols-3 p-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 p-10">
           <div className="flex flex-col items-center justify-between gap-5 w-full max-w-[310px]">
             <div className="max-w-[400px]">
               <img src={ThirdImage} alt="ThirdImage" />
@@ -29,9 +32,9 @@ const Statistics = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-between gap-5 w-full max-w-[400px]">
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-4">
               <div className="max-w-[100px]">
-                <img src={ThirdImage} alt="ThirdImage" />
+                <img src={MainImage} alt="ThirdImage" />
               </div>
               <div className="flex flex-col items-start justify-between gap-2">
                 <h2 className="font-bold">The Futr Abstr</h2>
@@ -45,9 +48,9 @@ const Statistics = () => {
                 <MainButton text={"Place a bid"} />
               </div>
             </div>
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-4">
               <div className="max-w-[100px]">
-                <img src={ThirdImage} alt="ThirdImage" />
+                <img src={SecondImage} alt="ThirdImage" />
               </div>
               <div className="flex flex-col items-start justify-between gap-2">
                 <h2 className="font-bold">The Futr Abstr</h2>
@@ -58,10 +61,10 @@ const Statistics = () => {
                   </span>
                   <span className="text-[#757575]">1 of 8</span>
                 </div>
-                <MainButton text={"Place a bid"} />
+                <SecondaryButton text={"Place a bid"} />
               </div>
             </div>
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-4">
               <div className="max-w-[100px]">
                 <img src={ThirdImage} alt="ThirdImage" />
               </div>
@@ -74,11 +77,11 @@ const Statistics = () => {
                   </span>
                   <span className="text-[#757575]">1 of 8</span>
                 </div>
-                <MainButton text={"Place a bid"} />
+                <SecondaryButton text={"Place a bid"} />
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center gap-5 max-w-[250px]">
             <div>
               <h2 className="font-extrabold text-xl uppercase">
                 Top collections Over

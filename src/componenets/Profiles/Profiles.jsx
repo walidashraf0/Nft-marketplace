@@ -3,7 +3,7 @@ import MainImage from "../../assets/mainunsplash.png";
 import SecondImage from "../../assets/secondunsplash.png";
 import ThirdImage from "../../assets/thirdunsplash.png";
 import Avatar from "../../assets/avatar.png";
-import MainButton from "../MainButton/MAinButton";
+import MainButton from "../MainButton/MainButton";
 
 const Profiles = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import MainButton from "../MainButton/MAinButton";
+import MainButton from "../MainButton/MainButton";
 import MainImage from "../../assets/mainunsplash.png";
 import SecondImage from "../../assets/secondunsplash.png";
 import ThirdImage from "../../assets/thirdunsplash.png";

@@ -10,7 +10,7 @@ const Profiles = () => {
     <>
       <section className="container mx-auto px-4 py-6">
         <div className="p-10">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between gap-4 max-md:flex-wrap max-md:justify-center max-md:gap-8">
             <div className="flex items-center justify-between gap-14">
               <div className="flex flex-col items-end justify-between gap-8">
                 <div className="relative max-w-[250px]">

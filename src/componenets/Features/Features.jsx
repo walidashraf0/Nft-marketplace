@@ -11,10 +11,10 @@ const Features = () => {
       <div className="bg-[#D9E0EC]/20">
         <div className="container mx-auto px-4 py-2 my-8">
           <div className="p-10">
-            <h1 className="font-extrabold text-2xl uppercase">
+            <h1 className="font-extrabold text-2xl uppercase max-md:text-center">
               Collection Featured NFTs
             </h1>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-10 max-md:flex max-md:flex-wrap max-md:justify-center max-md:gap-8"> 
               <div className="flex flex-col items-start justify-between gap-2 max-w-[340px]">
                 <div className="flex items-center justify-between gap-2">
                   <div className="max-w-[250px]">

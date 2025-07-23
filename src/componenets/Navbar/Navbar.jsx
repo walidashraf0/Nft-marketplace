@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import MainButton from "../MainButton/MAinButton";
@@ -12,7 +11,7 @@ const Navbar = () => {
         <a href="#">
           <h1 className="text-2xl font-extrabold text-[#3D00B7]">NFTERS</h1>
         </a>
-        <ul className="flex items-center gap-8 text-md font-semibold">
+        <ul className="flex items-center gap-8 text-md font-semibold max-md:hidden">
           <li className="hover:text-[#3D00B7] transition-colors">
             <a href="#">Marketplace</a>
           </li>
@@ -26,13 +25,13 @@ const Navbar = () => {
         <div className="relative">
           <input
             placeholder="Search"
-            className="border w-[300px] rounded-3xl py-2 px-4 border-[#EFEFEF]"
+            className="border w-[300px] rounded-3xl py-2 px-4 border-[#EFEFEF] max-md:hidden"
             type="text"
             name="search"
             id="search"
           />
           <FontAwesomeIcon
-            className="absolute top-3.5 right-2 text-gray-400"
+            className="absolute top-3.5 max-md:text-xl right-2 text-gray-400 max-md:transform max-md:translate-x-[-50%] max-md:translate-y-[-50%] cursor-pointer max-sm:hidden"
             icon={faMagnifyingGlass}
           />
         </div>

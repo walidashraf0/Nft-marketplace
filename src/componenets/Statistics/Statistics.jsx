@@ -10,8 +10,8 @@ const Statistics = () => {
   return (
     <>
       <section className="container m-auto px-4 py-2 my-8">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 p-10">
-          <div className="flex flex-col items-center justify-between gap-5 w-full max-w-[310px]">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 p-10 max-md:justify-center max-md:flex max-md:flex-wrap max-md:gap-8">
+          <div className="flex flex-col items-center justify-between gap-5 w-full max-w-[310px] max-md:justify-center">
             <div className="max-w-[400px]">
               <img src={ThirdImage} alt="ThirdImage" />
             </div>

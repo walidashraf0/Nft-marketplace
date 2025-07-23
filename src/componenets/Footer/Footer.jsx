@@ -11,8 +11,8 @@ const Footer = () => {
     <>
       <div className="container mx-auto px-4 py-2">
         <div className="p-10">
-          <div className="flex items-center justify-between gap-14">
-            <div className="flex flex-col items-start justify-between gap-4 max-w-[400px]">
+          <div className="flex items-center justify-between gap-14 max-md:flex-col max-md:gap-8 max-md:items-center max-md:justify-center">
+            <div className="flex flex-col items-start justify-between gap-4 max-w-[400px] max-md:flex-1/2">
               <h1 className="text-xl font-extrabold uppercase">NFters</h1>
               <p className="text-[#565656] text-md max-w-[400px]">
                 The world’s first and largest digital marketplace for crypto
@@ -46,11 +46,11 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex-1">
-              <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+            <div className="flex-1 max-md:flex-1/2">
+              <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:gap-4">
                 <div className="flex flex-col items-start justify-between gap-6 max-w-[250px]">
                   <h2 className="font-bold text-lg">Market Place</h2>
-                  <ul>
+                  <ul className="flex-1">
                     <li>All NFTS</li>
                     <li>New</li>
                     <li>Art</li>

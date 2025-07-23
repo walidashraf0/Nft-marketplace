@@ -10,7 +10,7 @@ const Details = () => {
     <>
       <div className="w-full bg-[#D9E0EC]/20">
         <div className="container m-auto px-4 py-2">
-          <div className="flex items-center justify-between gap-4 p-10">
+          <div className="flex items-center justify-between gap-4 p-10 flex-wrap max-md:justify-center max-md:items-center max-md:gap-6">
             <h1 className="text-2xl font-extrabold uppercase max-w-[300px]">
               The amazing NFT art of the world here
             </h1>

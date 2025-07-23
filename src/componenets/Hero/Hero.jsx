@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./hero.module.css";
 import MainButton from "../MainButton/MAinButton";
 import MainImage from "../../assets/mainunsplash.png";
 import SecondImage from "../../assets/secondunsplash.png";
@@ -11,9 +10,9 @@ import Dot from "../../assets/Dot.png";
 const Hero = () => {
   return (
     <section className="container m-auto px-4 py-2">
-      <div className="relative flex items-center justify-between p-10">
-        <div className="flex flex-col justify-between gap-8">
-          <h1 className="uppercase font-extrabold text-6xl w-[850px]">
+      <div className="relative flex items-center justify-between p-10 max-md:flex-wrap max-md:justify-center max-md:gap-8">
+        <div className="flex flex-col justify-between gap-8 max-md:w-full max-md:flex-1 max-md:items-center max-md:text-center max-md:gap-4">
+          <h1 className="uppercase font-extrabold text-6xl max-w-[850px]">
             Discover, and collect Digital Art NFTs
           </h1>
           <p className="text-gray-600 w-[450px] mb-6 text-lg">
@@ -36,7 +35,7 @@ const Hero = () => {
             </article>
           </div>
         </div>
-        <div className="relative w-[500px] h-[500px]">
+        <div className="relative w-[500px] h-[500px] max-md:hidden">
           <div className="absolute top-0 right-30 z-30">
             <div className="relative">
               <img
@@ -57,9 +56,9 @@ const Hero = () => {
                   </article>
                 </div>
               </div>
-              <div className="absolute bottom-4 left-5 w-[320px] text-white">
-                <div className="p-4 rounded-lg mx-auto backdrop-blur-lg bg-white/30">
-                  <div className="flex items-center justify-between">
+              <div className="absolute bottom-4 left-5 w-full max-w-[320px] text-white">
+                <div className="w-full p-4 rounded-lg mx-auto backdrop-blur-lg bg-white/30">
+                  <div className="flex items-center justify-between flex-wrap">
                     <article>
                       <span className="text-md">Current Bid</span>
                       <h4 className="text-xl font-bold">$ 0.25 ETH</h4>

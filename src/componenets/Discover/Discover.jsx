@@ -19,14 +19,14 @@ const Discover = () => {
   console.log(activeIndex);
   return (
     <>
-      <div className="bg-[#D9E0EC]/20">
+      <div className="bg-[#D9E0EC]/20 w-full">
         <div className="container mx-auto px-4 py-6">
           <div className="p-10">
             <h2 className="text-2xl font-extrabold uppercase">
               Discover More NFTS
             </h2>
-            <div className="flex items-center justify-between mt-4">
-              <ul className="flex items-center gap-4">
+            <div className="flex items-center justify-between mt-4 max-md:flex-wrap max-md:justify-center max-md:gap-4">
+              <ul className="flex items-center gap-4 flex-wrap">
                 {categories.map((cat, index) => (
                   <li
                     key={index}
